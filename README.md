@@ -2,7 +2,7 @@
 
 Aplikacja desktopowa CRUD (create-read-update-delete) do zarządzania wydatkami budżetu domowego.
 
-## Table of Contents
+## Spis treści
 - [Technologie](#technologie)
 - [Instalacja](#instalacja)
 - [Screenshoty](#screenshoty)
