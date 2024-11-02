@@ -17,11 +17,15 @@ Aplikacja desktopowa CRUD (create-read-update-delete) do zarządzania wydatkami 
    ```bash
    cd finance-manager
    
-3. Zainstaluj wymagane zależności (jeśli dotyczy).
-
-4. Uruchamianie:
+3. Zainstaluj wymagane zależności (zawarte w pom.xml).
+   
+4. Zbuduj projekt za pomocą Maven'a:
    ```bash
-   java -jar FinanceManager.jar
+   mvn clean install
+
+5. Uruchom aplikację:
+   ```bash
+   java -jar target/FinanceManager.jar
 
 ## Technologie
 - Java
