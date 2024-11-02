@@ -9,21 +9,30 @@ Aplikacja desktopowa CRUD (create-read-update-delete) do zarządzania wydatkami 
 - [Kontakt](#kontakt)
 
 ## Instalacja
-1. Sklonuj repozytorium:
+
+Jeśli masz zainstalowane JDK i Maven, przejdź do kroku 3.
+
+1. Zainstaluj Java Development Kit (JDK):
+   
+   https://docs.oracle.com/en/java/javase/21/install/overview-jdk-installation.html
+   
+2. Zainstaluj Maven:
+   
+   https://maven.apache.org/download.cgi
+
+3. Sklonuj repozytorium:
    ```bash
    git clone https://github.com/damianlebiedz/java-desktop-app.git
    
-2. Przejdź do katalogu projektu:
+4. Przejdź do katalogu projektu:
    ```bash
    cd finance-manager
-   
-3. Zainstaluj wymagane zależności (zawarte w pom.xml).
-   
-4. Zbuduj projekt za pomocą Maven'a:
+      
+5. Zbuduj projekt za pomocą Maven:
    ```bash
    mvn clean install
 
-5. Uruchom aplikację:
+6. Uruchom aplikację:
    ```bash
    java -jar target/FinanceManager.jar
 
