@@ -65,6 +65,6 @@ Przykład wprowadzenia niepoprawnych danych:
 ***
 
 ## Kontakt
-Damian Lebiedź
+Damian Lebiedź | 
 https://damianlebiedz.github.io
 
