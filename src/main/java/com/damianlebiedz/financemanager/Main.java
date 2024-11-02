@@ -12,11 +12,16 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) {
         try {
+            //Dodawanie FXML i ustalenie wielkości okna aplikacji
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/MainView.fxml"));
             int width = 1080;
             int height = 720;
             Scene scene = new Scene(fxmlLoader.load(), width, height);
+
+            //Dodawanie CSS
             scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/css/style.css")).toExternalForm());
+
+            //Dodawanie ikony i tytułu aplikacji
             Image icon = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/icon.png")));
             stage.getIcons().add(icon);
             stage.setTitle("Finance Manager");
@@ -28,6 +33,8 @@ public class Main extends Application {
             throw new RuntimeException(e);
         }
     }
+    
+    // Główna metoda aplikacji
     public static void main(String[] args) {
         launch();
     }
