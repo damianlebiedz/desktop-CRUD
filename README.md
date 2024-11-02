@@ -30,7 +30,7 @@ Aplikacja desktopowa CRUD (create-read-update-delete) do zarządzania wydatkami 
 - Maven
 - CSS
 
-## Zrzuty ekranu
+## Screenshoty
 
 ***
 Główny widok:
