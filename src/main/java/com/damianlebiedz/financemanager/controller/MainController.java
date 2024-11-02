@@ -19,8 +19,8 @@ import java.sql.*;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
 
-public class MainController implements Initializable {
-
+public class MainController implements Initializable { //Kontroler główny aplikacji
+    
     @FXML
     private TextField total;
     @FXML
@@ -50,11 +50,11 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        showData();
-        dateField.setValue(LocalDate.now());
+        showData(); //Wywoływanie metody do wyświetlenia dancyh
+        dateField.setValue(LocalDate.now()); //Ustawienie aktualnej daty w aplikacji
     }
     @FXML
-    private void addBtn() {
+    private void addBtn() { //Metoda wywoływana po naciśnięciu przycisku ADD (dodawanie danych)
         try {
             if(categoryField.getText().equals("Select a category")) {
                 throw new NumberFormatException();
@@ -72,7 +72,7 @@ public class MainController implements Initializable {
         }
     }
     @FXML
-    private void deleteBtn() {
+    private void deleteBtn() { //Metoda wywoływana po naciśnięciu przycisku DELETE (usuwanie danych)
         Data data = table.getSelectionModel().getSelectedItem();
         int id = data.getId();
         String delete =
@@ -81,7 +81,7 @@ public class MainController implements Initializable {
         showData();
     }
     @FXML
-    private void updateBtn() {
+    private void updateBtn() { //Metoda wywoływana po naciśnięciu przycisku UPDATE (aktualizowanie danych)
         try {
             if(categoryField.getText().equals("Select a category") || priceField.getText().startsWith("0")) {
                 throw new NumberFormatException();
@@ -101,7 +101,7 @@ public class MainController implements Initializable {
         }
     }
     @FXML
-    private void onMouseClickedTable() {
+    private void onMouseClickedTable() { //Metoda wywoływana po naciśnięciu na dane wprowadzone do tablicy
         try {
             Data data = table.getSelectionModel().getSelectedItem();
             nameField.setText(data.getName());
@@ -114,7 +114,7 @@ public class MainController implements Initializable {
         }
     }
     @FXML
-    private void category(ActionEvent event) {
+    private void category(ActionEvent event) { //Metoda do obsługi wyboru kategorii danych
         String category = ((MenuItem) event.getSource()).getText();
         switch (category) {
             case "food" -> categoryField.setText("food");
@@ -124,7 +124,7 @@ public class MainController implements Initializable {
             case "other" -> categoryField.setText("other");
         }
     }
-    private ObservableList<Data> getDataList() {
+    private ObservableList<Data> getDataList() { //Metoda do pobierania danych z bazy
         ObservableList<Data> dataList = FXCollections.observableArrayList();
 
         DBConnection DBConnection = new DBConnection();
@@ -148,7 +148,7 @@ public class MainController implements Initializable {
         }
         return dataList;
     }
-    private void showData() {
+    private void showData() { //Metoda do wyświetlania danych w tabeli
         nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
         categoryColumn.setCellValueFactory(new PropertyValueFactory<>("category"));
         priceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
@@ -159,7 +159,7 @@ public class MainController implements Initializable {
         table.getSortOrder().add(dateColumn);
         table.sort();
     }
-    private void executeUpdate(String query) {
+    private void executeUpdate(String query) { //Metoda wykonująca polecenie aktualizacji danych w bazie
         try {
             DBConnection DBConnection = new DBConnection();
             Connection connection = DBConnection.getConnection();
@@ -172,7 +172,7 @@ public class MainController implements Initializable {
             e.printStackTrace();
         }
     }
-    private void searchData() {
+    private void searchData() { //Metoda obsługująca pasek wyszukiwania danych
         FilteredList<Data> filteredData = new FilteredList<>(getDataList(), b -> true);
         search.textProperty().addListener((observableValue, oldValue, mixedNewValue) -> filteredData.setPredicate(Data -> {
             String newValue = mixedNewValue.toLowerCase();
@@ -197,7 +197,7 @@ public class MainController implements Initializable {
         sortedData.addListener((ListChangeListener.Change<? extends Data> c) -> setTotal());
         setTotal();
     }
-    private void setTotal() {
+    private void setTotal() { //Metoda obsługująca pole TOTAL (suma wydatków)
         BigDecimal totalAmount = BigDecimal.ZERO;
         totalAmount = table.getItems().stream().map(
                 Data::getPrice).reduce(totalAmount, BigDecimal::add);
