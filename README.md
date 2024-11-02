@@ -1,16 +1,34 @@
-# Java desktop CRUD-application: "Finance Manager"
+# Finance Manager
 
-Pierwszy rozbudowany projekt w Java - aplikacja desktopowa CRUD (create-read-update-delete) zbudowana przy użyciu Mavena, JavaFX, oraz desktopowej bazy danych H2 (SQL). Cel był następujący: zbudować aplikację, która umożliwi prowadzenie budżetu domowego.
+Prosta aplikacja desktopowa CRUD (create-read-update-delete) do zarządzania wydatkami budżetu domowego.
 
+## Table of Contents
+- [Technologie](#technologie)
+- [Instalacja](#instalacja)
+- [Zrzuty ekranu](#zrzutyekranu)
+- [Kontakt](#kontakt)
 
-CRUD Desktop application created using:
+## Instalacja
+1. Sklonuj repozytorium:
+   ```bash
+   git clone https://github.com/damianlebiedz/java-desktop-app.git
+   
+2. Przejdź do katalogu projektu:
+   cd finance-manager
+   
+3. Zainstaluj wymagane zależności (jeśli dotyczy).
+
+4. Uruchamianie:
+java -jar FinanceManager.jar
+
+## Technologie
+- Java
 - JavaFX
-- (SQL) H2 Embedded Database
-- built with Maven
+- H2 Database
+- Maven
+- CSS
 
-The application is supposed to Create, Read, Update and Delete data.
-
-The purpose of creating the application was to create simple and transparent project in Java. The Application stores data on household expenses and shows total amount of these value. To add a record to table, it is required to provide the name of the expense, indicate its category, amount and date. If the entered amount is in the wrong format, the application will indicate an error.
+## Zrzuty ekranu
 
 ***
 Main view:
@@ -29,3 +47,7 @@ Example of incorrect data error:
 ***
 ![incorrect data error](https://github.com/damianlebiedz/Finance-Manager-CRUD-/assets/109239676/25cad134-90b9-4c17-8674-26cd7429e21f)
 ***
+
+## Kontakt
+Damian Lebiedź | damianlebiedz.github.io
+
