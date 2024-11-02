@@ -27,7 +27,7 @@ Jeśli masz zainstalowane JDK i Maven, przejdź do kroku 3.
 4. Przejdź do katalogu projektu:
    ```bash
    cd finance-manager
-      
+
 5. Zbuduj projekt za pomocą Maven:
    ```bash
    mvn clean install
