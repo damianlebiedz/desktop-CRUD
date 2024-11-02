@@ -5,7 +5,7 @@ Aplikacja desktopowa CRUD (create-read-update-delete) do zarządzania wydatkami 
 ## Table of Contents
 - [Technologie](#technologie)
 - [Instalacja](#instalacja)
-- [Zrzuty ekranu](#zrzutyekranu)
+- [Screenshoty](#screenshoty)
 - [Kontakt](#kontakt)
 
 ## Instalacja
