@@ -1,8 +1,9 @@
-module pl.damianlebiedz.financemanager {
+module com.damianlebiedz.financemanager {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
     requires static lombok;
+    requires javafx.graphics;
 
     opens com.damianlebiedz.financemanager to javafx.fxml;
     exports com.damianlebiedz.financemanager;

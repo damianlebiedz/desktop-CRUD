@@ -91,7 +91,7 @@ public class MainController implements Initializable { //Kontroler główny apli
             String update =
                     "UPDATE  DATA SET NAME ='" + nameField.getText() + "', CATEGORY = '" + categoryField.getText() + "'," + " PRICE = " +
                             Float.parseFloat(priceField.getText()) + ", DATE = '" + dateField.getValue().toString() + "' " +
-                            "WHERE id = " + id + "";
+                            "WHERE id = " + id;
             executeUpdate(update);
             showData();
             errorField.clear();
