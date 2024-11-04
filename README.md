@@ -8,6 +8,16 @@ Aplikacja desktopowa CRUD (create-read-update-delete) do zarządzania wydatkami 
 - [Screenshoty](#screenshoty)
 - [Kontakt](#kontakt)
 
+## Technologie
+- Java
+- JavaFX
+- H2 Database
+- Maven
+- CSS
+
+Do stworzenia graficznego interfejsu użytkownika (GUI) aplikacji użyłem JavaFX. Wybrałem bazę danych H2 ze względu na jej szybkość oraz fakt, iż zależało mi na stworzeniu w pełni desktopowej aplikacji, której dane użytkownika będą przechowywane bezpośrednio w folderze projektu. Program zbudowałem za pomocą Maven, który pomógł sprawnie zastosować potrzebne zależności. Moim celem było stworzenie prostej, szybkiej w obsłudze i czytelnej aplikacji desktopowej typu CRUD.
+
+
 ## Instalacja
 Jeśli masz zainstalowane JDK i Maven, przejdź do kroku 3.
 
@@ -34,16 +44,7 @@ Jeśli masz zainstalowane JDK i Maven, przejdź do kroku 3.
 6. Uruchom aplikację:
    ```bash
    java -jar target/FinanceManager.jar
-
-## Technologie
-- Java
-- JavaFX
-- H2 Database
-- Maven
-- CSS
-
-Do stworzenia graficznego interfejsu użytkownika (GUI) aplikacji użyłem JavaFX. Wybrałem bazę danych H2 ze względu na jej szybkość oraz fakt, iż zależało mi na stworzeniu w pełni desktopowej aplikacji, której dane użytkownika będą przechowywane bezpośrednio w folderze projektu. Program zbudowałem za pomocą Maven, który pomógł sprawnie zastosować potrzebne zależności. Moim celem było stworzenie prostej, szybkiej w obsłudze i czytelnej aplikacji desktopowej typu CRUD.
-
+   
 ## Screenshoty
 
 ***
