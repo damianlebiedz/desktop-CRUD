@@ -68,4 +68,4 @@ Przykład wprowadzenia niepoprawnych danych:
 ## Kontakt
 Damian Lebiedź | 
 https://damianlebiedz.github.io
-
+https://www.linkedin.com/in/damian-lebied%C5%BA-440855336/
