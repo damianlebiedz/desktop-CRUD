@@ -19,31 +19,24 @@ Do stworzenia graficznego interfejsu użytkownika (GUI) aplikacji użyłem JavaF
 
 
 ## Instalacja
-Jeśli masz zainstalowane JDK i Maven, przejdź do kroku 3.
 
-1. Zainstaluj Java Development Kit (JDK):
-   
-   https://docs.oracle.com/en/java/javase/21/install/overview-jdk-installation.html
-   
-2. Zainstaluj Maven:
-   
-   https://maven.apache.org/download.cgi
+1. Java Development Kit (JDK):
+Upewnij się, że masz zainstalowane JDK (najlepiej w wersji 23.0.1 lub wyższej).
+Możesz go pobrać z https://www.oracle.com/java/technologies/downloads/
 
-3. Sklonuj repozytorium:
+2. Sklonuj repozytorium:
    ```bash
    git clone https://github.com/damianlebiedz/java-desktop-app.git
-   
-4. Przejdź do katalogu projektu:
-   ```bash
-   cd finance-manager
 
-5. Zbuduj projekt za pomocą Maven:
+4. Przejdź do katalogu projektu z poziomu cmd:
    ```bash
-   mvn clean install
+   cd java-desktop-app/build
 
-6. Uruchom aplikację:
+5. Uruchom aplikację:
    ```bash
-   java -jar target/FinanceManager.jar
+   java -jar FinanceManager-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+Alternatywnie można zbudować aplikację samodzielnie za pomocą Mavena. W tym celu należy mieć zainstalowane JDK, SDK i Maven. W celu łatwiejszego uruchamiania aplikacji zbudowałem plik .jar z zależnościami i zamieściłem go w folderze build. To on jest uruchamiany powyżej.
    
 ## Screenshoty
 
