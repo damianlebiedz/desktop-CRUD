@@ -4,9 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.damianlebiedz.financemanager</groupId>
+    <groupId>io.github.damianlebiedz.financemanager</groupId>
     <artifactId>FinanceManager</artifactId>
-    <version>1.0-SNAPSHOT</version>
     <name>FinanceManager</name>
 
     <properties>
@@ -16,7 +15,6 @@
     </properties>
 
     <dependencies>
-        <!-- JavaFX dependencies -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
@@ -37,14 +35,12 @@
             <artifactId>javafx-base</artifactId>
             <version>23.0.1</version>
         </dependency>
-        <!-- H2 Database dependency -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>2.2.220</version>
             <scope>compile</scope>
         </dependency>
-        <!-- Project Lombok dependency -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -61,10 +57,9 @@
                 <version>0.0.8</version>
                 <executions>
                     <execution>
-                        <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.damianlebiedz.financemanager.SuperMain
+                            <mainClass>io.github.damianlebiedz.financemanager.SuperMain
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
@@ -103,7 +98,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.damianlebiedz.financemanager.SuperMain</mainClass>
+                            <mainClass>io.github.damianlebiedz.financemanager.SuperMain</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
