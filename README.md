@@ -2,26 +2,11 @@
 
 Aplikacja desktopowa CRUD (create-read-update-delete) do zarządzania wydatkami budżetu domowego.
 
-## Table of Contents
+## Spis treści
 - [Technologie](#technologie)
 - [Instalacja](#instalacja)
-- [Screenshoty](#screenshoty)
+- [Zrzuty ekranu](#zrzuty-ekranu)
 - [Kontakt](#kontakt)
-
-## Instalacja
-1. Sklonuj repozytorium:
-   ```bash
-   git clone https://github.com/damianlebiedz/java-desktop-app.git
-   
-2. Przejdź do katalogu projektu:
-   ```bash
-   cd finance-manager
-   
-3. Zainstaluj wymagane zależności (jeśli dotyczy).
-
-4. Uruchamianie:
-   ```bash
-   java -jar FinanceManager.jar
 
 ## Technologie
 - Java
@@ -30,7 +15,30 @@ Aplikacja desktopowa CRUD (create-read-update-delete) do zarządzania wydatkami 
 - Maven
 - CSS
 
-## Screenshoty
+Do stworzenia graficznego interfejsu użytkownika (GUI) aplikacji użyłem JavaFX. Wybrałem bazę danych H2 ze względu na jej szybkość oraz fakt, iż zależało mi na stworzeniu w pełni desktopowej aplikacji, której dane użytkownika będą przechowywane bezpośrednio w folderze projektu. Program zbudowałem za pomocą Maven, który pomógł sprawnie zastosować potrzebne zależności. Moim celem było stworzenie prostej, szybkiej w obsłudze i czytelnej aplikacji desktopowej typu CRUD.
+
+
+## Instalacja
+
+1. Java Development Kit (JDK):
+Upewnij się, że masz zainstalowane JDK (najlepiej w wersji 23.0.1 lub wyższej).
+Możesz go pobrać z https://www.oracle.com/java/technologies/downloads/
+
+2. Sklonuj repozytorium:
+   ```bash
+   git clone https://github.com/damianlebiedz/java-desktop-app.git
+
+4. Przejdź do katalogu projektu z poziomu cmd:
+   ```bash
+   cd java-desktop-app/build
+
+5. Uruchom aplikację:
+   ```bash
+   java -jar FinanceManager-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+Alternatywnie można zbudować aplikację samodzielnie za pomocą Mavena. W tym celu należy mieć zainstalowane JDK, SDK i Maven. W celu łatwiejszego uruchamiania aplikacji zbudowałem plik .jar z zależnościami i zamieściłem go w folderze build. To on jest uruchamiany powyżej.
+   
+## Zrzuty ekranu
 
 ***
 Główny widok:
@@ -51,5 +59,6 @@ Przykład wprowadzenia niepoprawnych danych:
 ***
 
 ## Kontakt
-Damian Lebiedź | damianlebiedz.github.io
-
+Damian Lebiedź | 
+https://damianlebiedz.github.io |
+www.linkedin.com/in/damianlebiedz
