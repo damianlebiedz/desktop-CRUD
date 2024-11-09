@@ -5,8 +5,8 @@ Aplikacja desktopowa CRUD (create-read-update-delete) do zarządzania wydatkami 
 ## Spis treści
 - [Technologie](#technologie)
 - [Instalacja](#instalacja)
-- [Zrzuty ekranu](#zrzuty-ekranu)
 - [Błedy](#bledy)
+- [Zrzuty ekranu](#zrzuty-ekranu)
 - [Kontakt](#kontakt)
 
 ## Technologie
@@ -39,6 +39,9 @@ Możesz go pobrać z https://www.oracle.com/java/technologies/downloads/
 
 Alternatywnie można zbudować aplikację samodzielnie za pomocą Mavena. W tym celu należy mieć zainstalowane JDK, SDK i Maven. W celu łatwiejszego uruchamiania aplikacji zbudowałem plik .jar z zależnościami i zamieściłem go w folderze build. To on jest uruchamiany powyżej.
    
+## Błędy
+- Po pobraniu aplikacja nie łączy automatycznie z bazą danych - wymagane ręczne połączenie w IDE za pomocą loginu i hasła do bazy podanych w klasie odpowiedzialnej za obsługe DB. W TRAKCIE NAPRAWY
+
 ## Zrzuty ekranu
 
 ***
@@ -58,9 +61,6 @@ Przykład wprowadzenia niepoprawnych danych:
 ***
 ![incorrect data error](https://github.com/damianlebiedz/Finance-Manager-CRUD-/assets/109239676/25cad134-90b9-4c17-8674-26cd7429e21f)
 ***
-
-## Błędy
-- Po pobraniu aplikacja nie łączy automatycznie z bazą danych - wymagane ręczne połączenie w IDE za pomocą loginu i hasła do bazy podanych w klasie odpowiedzialnej za obsługe DB. W TRAKCIE NAPRAWY
 
 ## Kontakt
 Damian Lebiedź | 
