@@ -6,6 +6,7 @@ Aplikacja desktopowa CRUD (create-read-update-delete) do zarządzania wydatkami 
 - [Technologie](#technologie)
 - [Instalacja](#instalacja)
 - [Zrzuty ekranu](#zrzuty-ekranu)
+- [Błedy](#bledy)
 - [Kontakt](#kontakt)
 
 ## Technologie
@@ -57,6 +58,9 @@ Przykład wprowadzenia niepoprawnych danych:
 ***
 ![incorrect data error](https://github.com/damianlebiedz/Finance-Manager-CRUD-/assets/109239676/25cad134-90b9-4c17-8674-26cd7429e21f)
 ***
+
+## Błędy
+- Po pobraniu aplikacja nie łączy automatycznie z bazą danych - wymagane ręczne połączenie w IDE za pomocą loginu i hasła do bazy podanych w klasie odpowiedzialnej za obsługe DB. W TRAKCIE NAPRAWY
 
 ## Kontakt
 Damian Lebiedź | 
