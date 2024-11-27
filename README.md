@@ -65,4 +65,4 @@ Przykład wprowadzenia niepoprawnych danych:
 
 ## Kontakt
 Damian Lebiedź | 
-https://damianlebiedz.github.io |
+https://damianlebiedz.github.io
