@@ -5,7 +5,7 @@ Aplikacja desktopowa CRUD (create-read-update-delete) do zarządzania wydatkami 
 ## Spis treści
 - [Technologie](#technologie)
 - [Instalacja](#instalacja)
-- [Błedy](#błędy)
+- [Problemy](#problemy)
 - [Zrzuty ekranu](#zrzuty-ekranu)
 - [Kontakt](#kontakt)
 
@@ -39,7 +39,7 @@ Możesz go pobrać z https://www.oracle.com/java/technologies/downloads/
 
 Alternatywnie można zbudować aplikację samodzielnie za pomocą Mavena. W tym celu należy mieć zainstalowane JDK, SDK i Maven. W celu łatwiejszego uruchamiania aplikacji zbudowałem plik .jar z zależnościami i zamieściłem go w folderze build. To on jest uruchamiany powyżej.
    
-## Błędy
+## Problemy
 - Po pobraniu aplikacja nie łączy automatycznie z bazą danych - wymagane ręczne połączenie w IDE za pomocą loginu i hasła do bazy podanych w klasie odpowiedzialnej za obsługe DB. W TRAKCIE NAPRAWY
 
 ## Zrzuty ekranu
