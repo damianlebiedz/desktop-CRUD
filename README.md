@@ -5,7 +5,7 @@ Aplikacja desktopowa CRUD (create-read-update-delete) do zarządzania wydatkami 
 ## Spis treści
 - [Technologie](#technologie)
 - [Instalacja](#instalacja)
-- [Błedy](#błędy)
+- [Błędy](#błędy)
 - [Zrzuty ekranu](#zrzuty-ekranu)
 - [Kontakt](#kontakt)
 
@@ -65,4 +65,3 @@ Przykład wprowadzenia niepoprawnych danych:
 ## Kontakt
 Damian Lebiedź | 
 https://damianlebiedz.github.io |
-www.linkedin.com/in/damianlebiedz
