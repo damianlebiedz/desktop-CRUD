@@ -1,4 +1,4 @@
-ī# Finance Manager
+# Finance Manager
 
 Aplikacja desktopowa CRUD (create-read-update-delete) do zarządzania wydatkami budżetu domowego.
 
