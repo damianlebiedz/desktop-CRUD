@@ -41,7 +41,6 @@ Alternatywnie można zbudować aplikację samodzielnie za pomocą Mavena. W tym 
    
 ## Problemy
 - Po pobraniu aplikacja nie łączy się automatycznie z bazą danych - wymagane jest ręczne połączenie w IDE za pomocą loginu i hasła do bazy podanych w klasie odpowiedzialnej za obsługe DB.
-W TRAKCIE NAPRAWY
 
 ## Zrzuty ekranu
 
