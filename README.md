@@ -2,6 +2,8 @@
 
 Aplikacja desktopowa CRUD (create-read-update-delete) do zarządzania wydatkami budżetu domowego.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Spis treści
 - [Technologie](#technologie)
 - [Instalacja](#instalacja)
