@@ -4,7 +4,6 @@ Desktop CRUD (create-read-update-delete) application in Java, build with JavaFX 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Spis treści
 - [Technologies](#technologies)
 - [Installation](#installation)
 - [View](#view)
