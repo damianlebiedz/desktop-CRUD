@@ -6,6 +6,7 @@
 
     <groupId>io.github.damianlebiedz.financemanager</groupId>
     <artifactId>FinanceManager</artifactId>
+    <version>1.0.0</version>
     <name>FinanceManager</name>
 
     <properties>
