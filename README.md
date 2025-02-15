@@ -1,4 +1,4 @@
-# Desktop CRUD application
+# Desktop CRUD application ***Finance Manager***
 
 Desktop CRUD (create-read-update-delete) application in Java, build with JavaFX and H2 embedded database.
 
@@ -10,7 +10,7 @@ Desktop CRUD (create-read-update-delete) application in Java, build with JavaFX 
 - [Contact](#contact)
 
 ## Technologies
-- Java
+- Java 23
 - JavaFX
 - H2 Database
 - Maven
@@ -22,31 +22,33 @@ Make sure that you have installed:
 - Java Development Kit (JDK) v.23.0.1 or later (https://www.oracle.com/java/technologies/downloads)
 
    ```bash
-   git clone https://github.com/damianlebiedz/java-desktop-app.git
-   cd java-desktop-app/build
-   java -jar FinanceManager-1.0-SNAPSHOT-jar-with-dependencies.jar
+   git clone https://github.com/damianlebiedz/desktop-CRUD.git
+   cd desktop-CRUD
+   mvnw.cmd clean install
+   cd target
+   java -jar FinanceManager-1.0.0-jar-with-dependencies.jar
    ```
    
 ## View
 
 ***
-Main view:
+Creating:
 ***
-![main view](https://github.com/damianlebiedz/Finance-Manager-CRUD-/assets/109239676/3ed67c90-f38d-4e89-84e4-b9bf3fa5ac0a)
+![creating](https://github.com/user-attachments/assets/e7c5dfe6-11a9-47b1-91f8-abf0f9eae1af)
 ***
-Search bar:
+Searching:
 ***
-![search bar](https://github.com/damianlebiedz/Finance-Manager-CRUD-/assets/109239676/2d4ee471-396d-4519-8891-c11270c66856)
+![searching](https://github.com/user-attachments/assets/34728b43-17a5-4c2e-b2e8-674547857e69)
 ***
-Data update:
+Updating:
 ***
-![on mouse clicked](https://github.com/damianlebiedz/Finance-Manager-CRUD-/assets/109239676/36d219a3-2704-490f-be66-c4ee589e244e)
+![updating](https://github.com/user-attachments/assets/a616be1f-e35e-4270-99a3-2afa80e4305d)
 ***
-Incorrect data:
+Deleting:
 ***
-![incorrect data error](https://github.com/damianlebiedz/Finance-Manager-CRUD-/assets/109239676/25cad134-90b9-4c17-8674-26cd7429e21f)
+![deleting](https://github.com/user-attachments/assets/0a309b83-88e9-4c8f-b81f-29643a4cc506)
 ***
 
-## Kontakt
+## Contact
 Damian Lebiedź | 
 https://damianlebiedz.github.io
