@@ -51,4 +51,4 @@ Deleting:
 
 ## Contact
 Damian Lebiedź | 
-https://damianlebiedz.github.io
+https://damianlebiedz.github.io/contact.html
