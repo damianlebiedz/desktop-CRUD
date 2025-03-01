@@ -1,4 +1,4 @@
-# Desktop CRUD application ***Finance Manager***
+# Desktop CRUD ***Finance Manager***
 
 Desktop CRUD (create-read-update-delete) application in Java, build with JavaFX and H2 embedded database.
 
