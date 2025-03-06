@@ -17,8 +17,13 @@ import java.sql.*;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class MainController implements Initializable {
-    
+
+    private static final Logger LOGGER = Logger.getLogger(MainController.class.getName());
+
     @FXML
     private TextField total;
     @FXML
@@ -65,7 +70,8 @@ public class MainController implements Initializable {
             showData();
             errorField.clear();
         }
-        catch(NumberFormatException e) {
+        catch (NumberFormatException e) {
+            LOGGER.log(Level.SEVERE, "Number format exception", e);
             errorField.setText("INCORRECT DATA");
         }
     }
@@ -145,7 +151,8 @@ public class MainController implements Initializable {
                 }
             }
             catch (SQLException e) {
-                e.printStackTrace();
+                LOGGER.log(Level.SEVERE, "SQL exception", e);
+                errorField.setText("Database error");
             }
             finally {
                 try {
@@ -154,7 +161,8 @@ public class MainController implements Initializable {
                     }
                 }
                 catch (SQLException e) {
-                    e.printStackTrace();
+                    LOGGER.log(Level.SEVERE, "SQL exception", e);
+                    errorField.setText("Database error");
                 }
             }
         }
@@ -182,7 +190,8 @@ public class MainController implements Initializable {
             connection.close();
         }
         catch (SQLException e) {
-            e.printStackTrace();
+            LOGGER.log(Level.SEVERE, "SQL exception", e);
+            errorField.setText("Database error");
         }
     }
     private void searchData() {

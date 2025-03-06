@@ -7,21 +7,26 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.logging.Level;
 import java.util.stream.Collectors;
+
+import java.util.logging.Logger;
 
 public class DBConnection {
     private static final String url = "jdbc:h2:file:./src/main/resources/db/data";
     String username = "sa";
     String password = "123";
 
+    private static final Logger LOGGER = Logger.getLogger(DBConnection.class.getName());
+
     public Connection getConnection() {
         try {
             return DriverManager.getConnection(url, username, password);
         }
         catch (SQLException e) {
-            e.printStackTrace();
+            LOGGER.log(Level.SEVERE, "SQL exception", e);
+            throw new RuntimeException("Database connection error", e);
         }
-        return null;
     }
 
     public void initializeDatabase(Connection conn) {
@@ -34,7 +39,8 @@ public class DBConnection {
             stmt.execute(sql);
         }
         catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.log(Level.SEVERE, "Exception", e);
+            throw new RuntimeException("Database initialize error", e);
         }
     }
 }
