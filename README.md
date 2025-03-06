@@ -15,6 +15,7 @@ Desktop CRUD (create-read-update-delete) application in Java, build with JavaFX 
 - H2 Database
 - Maven
 - CSS3
+- JUnit5
 
 ## Installation
 
